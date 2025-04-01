@@ -166,8 +166,8 @@ body {
 .saturn .planet-core {
     top: 7em;
     right: 7em;
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     background-color: rgb(255, 221, 153);
     background-image: radial-gradient(circle, rgb(168, 92, 48) 10%, transparent 100%);
 }
