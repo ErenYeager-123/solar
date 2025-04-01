@@ -27,7 +27,7 @@ body {
 }
 
 /* Quỹ đạo */
-.earth, .moon, .mars, .mercury, .venus, .jupiter {
+.earth, .moon, .mars, .mercury, .venus, .jupiter, .saturn {
     position: absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
@@ -91,6 +91,14 @@ body {
     animation: orbit 433.2s linear infinite;
 }
 
+.saturn {
+    top: -10em;
+    right: -10em;
+    width: 70em;
+    height: 70em;
+    animation: orbit 10759.2s linear infinite;
+}
+
 /* Cốt lõi hành tinh (thay cho ::before) */
 .planet-core {
     position: absolute;
@@ -152,6 +160,15 @@ body {
     width: 5.5em;
     height: 5.5em;
     background-color: rgb(209, 184, 91);
+    background-image: radial-gradient(circle, rgb(168, 92, 48) 10%, transparent 100%);
+}
+
+.saturn .planet-core {
+    top: 7em;
+    right: 7em;
+    width: 6em;
+    height: 6em;
+    background-color: rgb(255, 221, 153);
     background-image: radial-gradient(circle, rgb(168, 92, 48) 10%, transparent 100%);
 }
 
