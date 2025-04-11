@@ -27,7 +27,7 @@ body {
 }
 
 /* Quỹ đạo */
-.earth, .moon, .mars, .mercury, .venus, .jupiter, .saturn {
+.earth, .moon, .mars, .mercury, .venus, .jupiter, .saturn, .ring {
     position: absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
@@ -92,11 +92,63 @@ body {
 }
 
 .saturn {
-    top: -10em;
-    right: -10em;
+    top: -15em;
+    right: -15em;
     width: 70em;
     height: 70em;
-    animation: orbit 10759.2s linear infinite;
+    animation: orbit 10739.2s linear infinite;
+}
+
+.ring-layer {
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 10em;
+    transform: translate(-50%, -50%);
+    animation: none;
+    z-index: 1; 
+}
+
+.ring1 {
+    width: 90px;
+    height: 90px;
+    border: 20px solid rgba(205, 224, 152, 0.3);
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 10em;
+    right: -3em;
+    transform: translate(-50%, -50%);
+    animation: none;
+    z-index: 1; 
+}
+
+.ring2 {
+    width: 80px;
+    height: 80px;
+    border: 18px solid rgba(93, 105, 37, 0.3);
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 10em;
+    right: -1.5em;
+    transform: translate(-50%, -50%);
+    animation: none;
+    z-index: 1; 
+}
+
+.ring3 {
+    width: 70px;
+    height: 70px;
+    border: 15px solid rgba(192, 219, 72, 0.3);
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 10em;
+    right: 0em;
+    transform: translate(-50%, -50%);
+    animation: none;
+    z-index: 1; 
 }
 
 /* Cốt lõi hành tinh (thay cho ::before) */
@@ -163,9 +215,9 @@ body {
     background-image: radial-gradient(circle, rgb(168, 92, 48) 10%, transparent 100%);
 }
 
-.saturn .planet-core {
-    top: 7em;
-    right: 7em;
+.saturn > .planet-core {
+    top: 7.5em;
+    right: 7.5em;
     width: 5em;
     height: 5em;
     background-color: rgb(255, 221, 153);
