@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     height: 100vh;
@@ -44,18 +45,18 @@ body {
 
 /* Hành tinh */
 .mercury {
-    top: 10em;
-    right: 10em;
-    width: 20em;
-    height: 20em;
+    top: 11.5em;
+    right: 11.5em;
+    width: 17em;
+    height: 17em;
     animation: orbit 8.8s linear infinite;
 }
 
 .venus {
-    top: 7.5em;
-    right: 7.5em;
-    width: 25em;
-    height: 25em;
+    top: 9.5em;
+    right: 9.5em;
+    width: 21em;
+    height: 21em;
     animation: orbit 22.5s linear infinite;
 }
 
@@ -68,10 +69,10 @@ body {
 }
 
 .moon {
-    top: 0;
-    right: 0;
-    width: 8em;
-    height: 8em;
+    top: 0.8em;
+    right: 0.8em;
+    width: 6.5em;
+    height: 6.5em;
     animation: orbit 2.7s linear infinite;
 }
 
@@ -166,16 +167,16 @@ body {
 }
 
 .mercury .planet-core {
-    top: 2.2em;
-    right: 2.2em;
+    top: 1.7em;
+    right: 1.7em;
     width: 1.5em;
     height: 1.5em;
     background-color: rgb(150, 150, 150);
 }
 
 .venus .planet-core {
-    top: 2.5em;
-    right: 2.5em;
+    top: 1.7em;
+    right: 1.7em;
     width: 2.5em;
     height: 2.5em;
     background-color: rgb(255, 150, 150);
@@ -191,10 +192,10 @@ body {
 }
 
 .moon .planet-core {
-    top: 0.6em;
-    right: 0.6em;
-    width: 1.2em;
-    height: 1.2em;
+    top: 0.5em;
+    right: 0.5em;
+    width: 1em;
+    height: 1em;
     background-color: gray;
 }
 
@@ -215,7 +216,7 @@ body {
     background-image: radial-gradient(circle, rgb(168, 92, 48) 10%, transparent 100%);
 }
 
-.saturn > .planet-core {
+.saturn .planet-core {
     top: 7.5em;
     right: 7.5em;
     width: 5em;
