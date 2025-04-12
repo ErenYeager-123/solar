@@ -130,25 +130,25 @@ body {
 }
 
 .uranus {
-    top: -28em;
-    right: -28em;
-    width: 95em; 
-    height: 95em;
+    top: -25em;
+    right: -25em;
+    width: 90em; 
+    height: 90em;
     animation: orbit 30688.5s linear infinite;
 }
 .ring1s {
-    width: 50px;
-    height: 50px;
-    border: 15px solid rgba(247, 251, 251, 0.583);
-    right: 5.5em;
-    top: 13.5em;
+    width: 40px;
+    height: 40px;
+    border: 12px solid rgba(252, 252, 252, 0.781);
+    right: 6.625em;
+    top: 13em;
 }
 .ring2s {
-    width: 60px;
-    height: 60px;
-    border: 18px solid rgba(95, 158, 206, 0.829);
-    right: 3.75em;
-    top: 13.5em;
+    width: 45px;
+    height: 45px;
+    border: 7px solid rgba(95, 158, 206, 0.829);
+    right: 7.125em;
+    top: 13em;
 }
 
 /* Cốt lõi hành tinh (thay cho ::before) */
@@ -225,8 +225,8 @@ body {
 }
 
 .uranus .planet-core {
-    top: 12em;
-    right: 12em;
+    top: 11.5em;
+    right: 11.5em;
     width: 3em; 
     height: 3em;
     background-color: rgb(153, 255, 255);
