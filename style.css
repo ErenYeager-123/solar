@@ -28,7 +28,7 @@ body {
 }
 
 /* Quỹ đạo */
-.earth, .moon, .mars, .mercury, .venus, .jupiter, .saturn, .ring {
+.earth, .moon, .mars, .mercury, .venus, .jupiter, .saturn, .ring, .uranus {
     position: absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
@@ -99,57 +99,56 @@ body {
     height: 70em;
     animation: orbit 10739.2s linear infinite;
 }
-
 .ring-layer {
     border-radius: 50%;
     background: transparent;
     position: absolute;
-    top: 10em;
     transform: translate(-50%, -50%);
     animation: none;
     z-index: 1; 
 }
-
 .ring1 {
     width: 90px;
     height: 90px;
     border: 20px solid rgba(205, 224, 152, 0.3);
-    border-radius: 50%;
-    background: transparent;
-    position: absolute;
-    top: 10em;
     right: -3em;
-    transform: translate(-50%, -50%);
-    animation: none;
-    z-index: 1; 
+    top: 10em;
 }
-
 .ring2 {
     width: 80px;
     height: 80px;
     border: 18px solid rgba(93, 105, 37, 0.3);
-    border-radius: 50%;
-    background: transparent;
-    position: absolute;
-    top: 10em;
     right: -1.5em;
-    transform: translate(-50%, -50%);
-    animation: none;
-    z-index: 1; 
+    top: 10em;
 }
-
 .ring3 {
     width: 70px;
     height: 70px;
     border: 15px solid rgba(192, 219, 72, 0.3);
-    border-radius: 50%;
-    background: transparent;
-    position: absolute;
-    top: 10em;
     right: 0em;
-    transform: translate(-50%, -50%);
-    animation: none;
-    z-index: 1; 
+    top: 10em;
+}
+
+.uranus {
+    top: -28em;
+    right: -28em;
+    width: 95em; 
+    height: 95em;
+    animation: orbit 30688.5s linear infinite;
+}
+.ring1s {
+    width: 50px;
+    height: 50px;
+    border: 15px solid rgba(247, 251, 251, 0.583);
+    right: 5.5em;
+    top: 13.5em;
+}
+.ring2s {
+    width: 60px;
+    height: 60px;
+    border: 18px solid rgba(95, 158, 206, 0.829);
+    right: 3.75em;
+    top: 13.5em;
 }
 
 /* Cốt lõi hành tinh (thay cho ::before) */
@@ -183,7 +182,7 @@ body {
 }
 
 .earth > .planet-core {
-    top: 2.8em;
+    top: 2.8em; 
     right: 2.8em;
     width: 3em;
     height: 3em;
@@ -223,6 +222,14 @@ body {
     height: 5em;
     background-color: rgb(255, 221, 153);
     background-image: radial-gradient(circle, rgb(168, 92, 48) 10%, transparent 100%);
+}
+
+.uranus .planet-core {
+    top: 12em;
+    right: 12em;
+    width: 3em; 
+    height: 3em;
+    background-color: rgb(153, 255, 255);
 }
 
 /* Tên hành tinh */
