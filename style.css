@@ -28,7 +28,7 @@ body {
 }
 
 /* Quỹ đạo */
-.earth, .moon, .mars, .mercury, .venus, .jupiter, .saturn, .ring, .uranus {
+.earth, .moon, .mars, .mercury, .venus, .jupiter, .saturn, .ring, .uranus, .neptune {
     position: absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
@@ -151,6 +151,28 @@ body {
     top: 13em;
 }
 
+.neptune {
+    top: -32.5em;
+    right: -32.5em;
+    width: 105em;  
+    height: 105em;
+    animation: orbit 60182.4s linear infinite;
+}
+.ring1n {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.911);
+    right: 10.375em;
+    top: 15.25em;
+}
+.ring2n {
+    width: 42px;
+    height: 42px;
+    border: 2px solid rgba(196, 113, 113, 0.541);
+    right: 10.6em;
+    top: 15.25em;
+}
+
 /* Cốt lõi hành tinh (thay cho ::before) */
 .planet-core {
     position: absolute;
@@ -230,6 +252,14 @@ body {
     width: 3em; 
     height: 3em;
     background-color: rgb(153, 255, 255);
+}
+
+.neptune .planet-core {
+    top: 13.75em;
+    right: 13.75em;
+    width: 2.9em; 
+    height: 2.9em;
+    background-color: rgb(64, 64, 236);
 }
 
 /* Tên hành tinh */

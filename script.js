@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const planets = document.querySelectorAll(".sun, .mercury, .venus, .earth, .moon, .mars, .jupiter, .saturn, .uranus");
+    const planets = document.querySelectorAll(".sun, .mercury, .venus, .earth, .moon, .mars, .jupiter, .saturn, .uranus, .neptune, .pluto"); // Chọn tất cả các hành tinh
 
     planets.forEach((planet) => {
         const core = planet.querySelector(".planet-core"); // Lõi hành tinh
